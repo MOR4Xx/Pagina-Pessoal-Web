@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   display: block;
@@ -14,14 +18,15 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  padding: 0 20px;
+  padding: 0 2vw;
   background-color: #3B165D;
 }
 
 .menu-nav {
+  margin-right: 8vw;
   text-align: right;
   align-content: center;
-  height: 90px;
+  height: 10vh;
   min-width: 100vh;
   background-color: #3B165D;
   align-items: center;
@@ -41,8 +46,9 @@ body {
 }
 
 .menu-nav ul li a button {
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-align: center;
+  color: #E3E0D9;
 }
 
 .a-menu :hover {
@@ -51,7 +57,6 @@ body {
   border-color: #1DC6B5;
 
 }
-
 
 .button-menu {
   border: none;
@@ -63,74 +68,82 @@ body {
   font-size: 16px;
 }
 
-header img {
-  align-items: center;
-  max-width: 100%;
-  height: auto;
-}
-
 .perfil {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
-}
-
-.perfil img {
-  align-items: center;
-  max-width: 70px;
-  height: auto;
-  margin-right: 10px;
-  border-radius: 100px;
-}
-
-.perfil p {
   font-weight: bold;
-  margin: 0;
+  margin: 0vh 8vw;
   font-size: 30px;
   color: #E3E0D9;
 }
 
+
 .conteudo-principal {
   min-height: 100vh;
-
 }
 
-.secao-principal {
+.moldura-section{
+  display: flex;
+  width: 100%;
+  padding: 2em;
+}
+
+#secao-principal {
   padding: 1vw 1vw;
-  background: #575656 url(/img/background.jpg) center/cover;
+  background: #575656 url(/img/fundoBrancoPreto.jpg) center/cover;
   background-attachment: fixed;
 }
 
 .resumo-backgroud {
   display: flex;
-  background-color: #E3E0D9;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.8);
   max-width: 70vw;
   min-height: 80vh;
 }
 
 .resumo-conteudo {
   font-size: 3vh;
+  color: #E3E0D9;
   align-content: center;
-  margin-left: 10vw;
-
+  margin: 0vh 10vw;
 }
 
+
 .button-sevices {
-  padding: 1vh 1vw;
+  margin: 3vh 0vw;
+  padding: 1vh 0vw;
   border-radius: 20px;
   background-color: #1DC6B5;
+  color: #E3E0D9;
+  font-weight: bold;
+  font-size: 18px;
+  width: 200px;
   border: none;
 }
 
 
-.habilidades {
+#habilidades {
   background-color: #3B165D;
   min-height: 100vh;
+  display: flex;
 }
 
-.contato {
+
+.habilidades-img{
+  flex: 1;
+  background-color: black;
+
+
+}
+.habilidades-conteudo{
+  flex: 1;
+  background-color: #E3E0D9;
+
+}
+
+#contato {
   background: #1DC6B5;
   min-height: 100vh;
 }
