@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  background-color: #575656;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 20px;
+  background-color: #3B165D;
+}
+
+.menu-nav {
+  text-align: right;
+  align-content: center;
+  height: 90px;
+  min-width: 100vh;
+  background-color: #3B165D;
+  align-items: center;
+}
+
+.menu-nav ul {
+  list-style-type: none;
+}
+
+.menu-nav ul li {
+  display: inline-block;
+}
+
+.menu-nav ul li a {
+  padding: 10px;
+  margin-right: 8px;
+}
+
+.menu-nav ul li a button {
+  font-weight: bold;
+  text-align: center;
+}
+
+.a-menu :hover {
+  color: #1DC6B5;
+  border-bottom: 3px solid;
+  border-color: #1DC6B5;
+
+}
+
+
+.button-menu {
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  height: 30px;
+  color: #E3E0D9;
+  font-size: 16px;
+}
+
+header img {
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.perfil img {
+  align-items: center;
+  max-width: 70px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.perfil p {
+  font-weight: bold;
+  margin: 0;
+  font-size: 30px;
+  color: #E3E0D9;
+}
+
+.conteudo-principal {
+  min-height: 100vh;
+
+}
+
+.secao-principal {
+  padding: 1vw 1vw;
+  background: #575656 url(/img/background.jpg) center/cover;
+  background-attachment: fixed;
+}
+
+.resumo-backgroud {
+  display: flex;
+  background-color: #E3E0D9;
+  opacity: 0.5;
+  max-width: 70vw;
+  min-height: 80vh;
+}
+
+.resumo-conteudo {
+  font-size: 3vh;
+  align-content: center;
+  margin-left: 10vw;
+
+}
+
+.button-sevices {
+  padding: 1vh 1vw;
+  border-radius: 20px;
+  background-color: #1DC6B5;
+  border: none;
+}
+
+
+.habilidades {
+  background-color: #3B165D;
+  min-height: 100vh;
+}
+
+.contato {
+  background: #1DC6B5;
+  min-height: 100vh;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  min-width: 100vh;
+  background-color: #3B165D;
+  color: #E3E0D9;
+  text-align: center;
+  padding: 15px;
+}
+
