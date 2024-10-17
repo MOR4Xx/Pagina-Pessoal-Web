@@ -3,33 +3,44 @@
   padding: 0;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: block;
-  background-color: #575656;
+  background-color: #3B165D;
 }
 
+section {
+  scroll-margin-top: 10vh;
+  transition: all 0.5s linear;
+}
+
+/**************************************************/
+/* Header*/
+
+/***********MENU BAR***********/
 .menubar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  padding: 0 2vw;
+  min-width: 100%;
   background-color: #3B165D;
+  position: fixed;
+  z-index: 200;
 }
 
 .menu-nav {
-  margin-right: 8vw;
+  justify-content: end;
   text-align: right;
   align-content: center;
   height: 10vh;
-  min-width: 100vh;
   background-color: #3B165D;
   align-items: center;
+  margin: 0 2vw 0 8vw;
 }
 
 .menu-nav ul {
@@ -69,29 +80,37 @@ body {
 }
 
 .perfil {
+  margin-top: 3px;
+  width: 15vw;
+  height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   text-align: left;
   font-weight: bold;
-  margin: 0vh 8vw;
-  font-size: 30px;
+  font-size: 80%;
   color: #E3E0D9;
+  margin-left: 2vw;
 }
 
+header img {
+  max-width: 55%;
+  height: auto;
+}
+
+/*******************************/
+/*Main*/
 
 .conteudo-principal {
+  position: absolute;
+  padding-top: 10vh;
   min-height: 100vh;
 }
 
-.moldura-section{
-  display: flex;
-  width: 100%;
-  padding: 2em;
-}
 
+/***********Seção principal***********/
 #secao-principal {
-  padding: 1vw 1vw;
+  padding: 1vh 1vw;
   background: #575656 url(/img/fundoBrancoPreto.jpg) center/cover;
   background-attachment: fixed;
 }
@@ -123,40 +142,69 @@ body {
   border: none;
 }
 
-
-#habilidades {
+/***********Seção sobre***********/
+#sobre {
   background-color: #3B165D;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: space-between;
 }
 
-
-.habilidades-img{
+.sobre-img {
   flex: 1;
-  background: #3B165D url(/img/image1.jpg) center/cover;
+  background: #3B165D url(/img/image1.jpg) center;
   background-attachment: fixed;
-  filter: grayscale(1);
+  /*filter: grayscale(1);*/
 
 }
-.habilidades-conteudo{
+
+.sobre-conteudo {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   flex: 1;
-  background-color: #fbfbfb;
-  padding: 5em;
+  color: #E3E0D9;
+}
+
+.texto-sobre {
+  margin: 30% 15%;
+  max-width: 50%;
+}
+
+.texto-sobre h1 {
+  margin-bottom: 4%;
+  font-size: 200%;
+  color: #1DC6B5;
+
+}
+
+.texto-sobre p {
+  line-height: 1.5;
+}
+
+/***********Seção habilidade***********/
+#habilidades {
+  background: #1DC6B5;
+  min-height: 90vh;
 }
 
 
+/***********Seção hobbies***********/
+#hobbies {
+  background-color: #3B165D;
+  min-height: 90vh;
+}
+
+/***********Contato***********/
 #contato {
   background: #1DC6B5;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 footer {
   position: relative;
+  z-index: 10;
   bottom: 0;
   min-width: 100vh;
   background-color: #3B165D;
