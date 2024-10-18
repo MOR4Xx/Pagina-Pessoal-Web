@@ -129,9 +129,14 @@ header img {
   margin: 0vh 10vw;
 }
 
+.div-button-sevices{
+  display: flex;
+  min-height: 10vh;
+  justify-content: start;
+  align-items: center;
+}
 
 .button-sevices {
-  margin: 3vh 0vw;
   padding: 1vh 0vw;
   border-radius: 20px;
   background-color: #1DC6B5;
@@ -143,8 +148,14 @@ header img {
   cursor: pointer;
 }
 
-.button-sevices :hover{
+.button-sevices:hover {
+  border-right: 3px solid #fbfbfb;
+  border-bottom: 5px solid #ffffff;
+}
 
+.button-sevices :hover{
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 /***********Seção sobre***********/
@@ -188,10 +199,100 @@ header img {
   line-height: 1.5;
 }
 
+/*******************/
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#habilidades h1, #hobbies h1 {
+  color: #E3E0D9;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /***********Seção habilidade***********/
 #habilidades {
   background: #1DC6B5;
   min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+#habilidades h1{
+  color: #E3E0D9;
+}
+
+.div-posters-habilidades {
+  padding: 3%;
+  margin: 0 auto;
+  min-width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.div-posters-habilidades ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.div-posters-habilidades ul li {
+  padding: 10px;
+  display: inline-block;
+  justify-content: center;
+}
+
+.posters-habilidades h3{
+  margin: 15px;
+}
+
+.posters-habilidades p{
+  margin: 15px;
+}
+
+.posters-habilidades img {
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.posters-habilidades {
+  display: block;
+  width: 300px;
+  height: 500px;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  box-shadow:4px 4px 8px rgba(0,0,0,0.5);
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+.posters-habilidades:hover {
+  border-right: 3px solid  #3B165D;
+  border-bottom: 5px solid  #3B165D;
+}
+
+.posters-habilidades:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 
@@ -199,6 +300,80 @@ header img {
 #hobbies {
   background-color: #3B165D;
   min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+ #hobbies h1{
+   color: #E3E0D9;
+
+ }
+
+.div-posters-hobbies{
+  padding: 3%;
+  margin: 0 auto;
+  min-width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.div-posters-hobbies ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.div-posters-hobbies ul li {
+  padding: 10px;
+  display: inline-block;
+  justify-content: center;
+}
+
+.posters-hobbies h3{
+  margin: 15px;
+}
+
+.posters-hobbies p{
+  margin: 15px;
+  justify-content: center;
+}
+
+.posters-hobbies img {
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.posters-hobbies {
+  display: block;
+  width: 300px;
+  height: 500px;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  box-shadow:4px 4px 8px rgba(0,0,0,0.5);
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+.posters-hobbies:hover {
+  border-right: 3px solid #1DC6B5;
+  border-bottom: 5px solid #1DC6B5;
+}
+
+.posters-hobbies:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 /***********Contato***********/
