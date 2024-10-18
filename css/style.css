@@ -129,6 +129,10 @@ header img {
   margin: 0vh 10vw;
 }
 
+.conteudo-titulo h1,.conteudo-titulo h3{
+  margin-bottom: 5vh;
+}
+
 .div-button-sevices{
   display: flex;
   min-height: 10vh;
@@ -226,6 +230,7 @@ header img {
 
 #habilidades h1{
   color: #E3E0D9;
+  border-bottom:4px solid #3B165D;
 }
 
 .div-posters-habilidades {
@@ -245,7 +250,7 @@ header img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 2em;
 }
 
 .div-posters-habilidades ul li {
@@ -305,7 +310,7 @@ header img {
 }
  #hobbies h1{
    color: #E3E0D9;
-
+   border-bottom:4px solid #1DC6B5;
  }
 
 .div-posters-hobbies{
@@ -325,7 +330,7 @@ header img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 2em;
 }
 
 .div-posters-hobbies ul li {
@@ -380,11 +385,136 @@ header img {
 #contato {
   background: #1DC6B5;
   min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.form-ajust {
+  flex:1;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  background-color: #12061D;
+  padding: 3%;
+  border-radius: 20px;
+  width: 50%;
+  height: auto;
+  color: #E3E0D9;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper h2 {
+  color: #E3E0D9;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #E3E0D9;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  width: 100%;
+  padding: 1%;
+  border-radius: 10px;
+  border: 1px solid #E3E0D9;
+  background-color: #1E1B29;
+  color: #E3E0D9;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #1DC6B5;
+  color: #12061D;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 40%;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #17a294;
+}
+
+.contact-info {
+  margin-top: 5%;
+  text-align: center;
+  flex: 1;
+  cursor: default;
+}
+
+.menu-contato {
+  display: inline-block;
+  margin: 0;
+  align-content: center;
+  height: auto;
+  min-width: auto;
+  align-items: center;
+  background: none;
+
+}
+
+.menu-contato ul li {
+  display: inline-block;
+}
+
+.button-redes i {
+  font-size: 18px;
+}
+
+.button-redes {
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  font-size: 20px;
+  color: #E3E0D9;
+  background: none;
+}
+
+.button-redes :hover, .contact-info :hover {
+  color: #3B165D;
+}
+
+.contact-info p, .contact-info h3, .contact-info ul {
+  color: #E3E0D9;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: none;
+}
+
+.contact-info ul li {
+  margin-bottom: 5px;
+}
+
+.contact-info i {
+  margin-right: 10px;
 }
 
 footer {
   position: relative;
-  z-index: 10;
+  z-index: 100;
   bottom: 0;
   min-width: 100vh;
   background-color: #3B165D;
