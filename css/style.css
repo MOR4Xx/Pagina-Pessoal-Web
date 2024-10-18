@@ -66,7 +66,7 @@ section {
   color: #1DC6B5;
   border-bottom: 3px solid;
   border-color: #1DC6B5;
-
+  cursor: pointer;
 }
 
 .button-menu {
@@ -94,13 +94,13 @@ section {
 }
 
 header img {
-  max-width: 55%;
+  max-width: 50%;
   height: auto;
 }
 
 /*******************************/
-/*Main*/
 
+/***********Main***********/
 .conteudo-principal {
   position: absolute;
   padding-top: 10vh;
@@ -140,6 +140,11 @@ header img {
   font-size: 18px;
   width: 200px;
   border: none;
+  cursor: pointer;
+}
+
+.button-sevices :hover{
+
 }
 
 /***********Seção sobre***********/
