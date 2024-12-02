@@ -1,3 +1,4 @@
+
 /* Estilos Globais */
 * {
     margin: 0;
@@ -267,13 +268,13 @@ section {
 }
 
 .focus:hover .posters-habilidades {
-  filter: blur(3px);
-  opacity: 0.5;
+    filter: blur(3px);
+    opacity: 0.5;
 }
 
 .focus .posters-habilidades:hover{
-  filter: blur(0px);
-  opacity: 1;
+    filter: blur(0px);
+    opacity: 1;
 }
 
 .posters-habilidades:hover {
@@ -352,13 +353,13 @@ section {
 }
 
 .focus:hover .posters-hobbies {
-  filter: blur(3px);
-  opacity: 0.5;
+    filter: blur(3px);
+    opacity: 0.5;
 }
 
 .focus .posters-hobbies:hover{
-  filter: blur(0px);
-  opacity: 1;
+    filter: blur(0px);
+    opacity: 1;
 }
 
 .posters-hobbies:hover {
