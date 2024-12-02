@@ -97,7 +97,7 @@ section {
 /***********Seção principal***********/
 #secao-principal {
     padding: 1vh 1vw;
-    background: #575656 url(/img/fundoBrancoPreto.jpg) center/cover;
+    background: #575656 url(./img/fundoBrancoPreto.jpg) center/cover;
     background-attachment: fixed;
 }
 
@@ -154,7 +154,7 @@ section {
 
 .sobre-img {
     flex: 1;
-    background: #3B165D url(/img/fotoperfil.jpeg) no-repeat center/cover;
+    background: #3B165D url(./img/fotoperfil.jpeg) no-repeat center/cover;
 }
 
 .sobre-conteudo {
