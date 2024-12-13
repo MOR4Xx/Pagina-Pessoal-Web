@@ -507,12 +507,15 @@ button[type="submit"]:hover {
 }
 
 /***********Footer***********/
-#footer {
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 5vh;
     background-color: #3B165D;
     color: #E3E0D9;
-    text-align: center;
-    padding: 15px;
-    z-index: 100;
 }
 
 /* Media Queries */
