@@ -1,606 +1,676 @@
-
 /* Estilos Globais */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
 }
 
+/* Define o comportamento de rolagem suave para âncoras */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Transição suave ao clicar em links âncora */
 }
 
+/* Configurações gerais do corpo da página */
 body {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: #3B165D;
-    color: #E3E0D9;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #3B165D; /* Define a cor de fundo */
+    color: #E3E0D9; /* Define a cor do texto */
 }
 
 /* Estrutura Geral */
 section {
-    scroll-margin-top: 10vh;
-    transition: all 0.5s linear;
+    scroll-margin-top: 10vh; /* Define um espaço superior ao rolar para uma seção */
+    transition: all 0.5s linear; /* Adiciona uma transição suave ao aplicar mudanças */
 }
 
-/**************************************************/
 /* Header (Menu) */
 
+/* Configurações gerais do cabeçalho fixo */
 .menubar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    background-color: #3B165D;
-    position: fixed;
-    width: 100%;
-    z-index: 200;
+    display: flex; /* Define um layout flexbox */
+    justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    height: 10vh; /* Define a altura do cabeçalho */
+    background-color: #3B165D; /* Define a cor de fundo */
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    width: 100%; /* Define a largura total do cabeçalho */
+    z-index: 200; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
+/* Configurações para a imagem de perfil no cabeçalho */
 .perfil img {
-    max-width: 100px;
-    height: auto;
+    max-width: 100px; /* Define a largura máxima da imagem */
+    height: auto; /* Ajusta a altura proporcionalmente */
 }
 
+/* Configurações do menu de navegação */
 .menu-nav {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    display: flex; /* Define um layout flexbox */
+    justify-content: end; /* Alinha os itens à direita */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
+/* Estilos para a lista de itens no menu */
 .menu-nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
+    list-style-type: none; /* Remove marcadores da lista */
+    display: flex; /* Define um layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
 .menu-nav ul li {
-    display: inline-block;
+    display: inline-block; /* Exibe os itens em linha */
 }
 
+/* Estilos para os links no menu */
 .menu-nav ul li a {
-    padding: 10px;
-    margin-right: 8px;
+    padding: 10px; /* Adiciona espaçamento interno */
+    margin-right: 8px; /* Adiciona espaçamento à direita */
 }
 
 .menu-nav ul li a button {
-    text-align: center;
-    color: #E3E0D9;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+    text-align: center; /* Centraliza o texto dentro do botão */
+    color: #E3E0D9; /* Define a cor do texto */
+    background: none; /* Remove o fundo padrão */
+    border: none; /* Remove as bordas */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    font-size: 16px; /* Define o tamanho da fonte */
 }
 
+/* Estilo ao passar o mouse sobre os links do menu */
 .a-menu:hover {
-    color: #1DC6B5;
-    border-bottom: 3px solid #1DC6B5;
+    color: #1DC6B5; /* Muda a cor do texto ao passar o mouse */
+    border-bottom: 3px solid #1DC6B5; /* Adiciona uma borda inferior destacada */
 }
 
-/* Ícone do menu "hambúrguer" */
+/* Ícone do menu "hambúrguer" usado em dispositivos menores */
 #menu-toggle {
-    display: none;
+    display: none; /* Oculta o botão "hambúrguer" por padrão */
 }
 
 .menu-icon {
-    display: none;
-    font-size: 2rem;
-    color: #E3E0D9;
-    cursor: pointer;
+    display: none; /* Oculta o ícone do menu por padrão */
+    font-size: 2rem; /* Define o tamanho do ícone */
+    color: #E3E0D9; /* Define a cor do ícone */
+    cursor: pointer; /* Altera o cursor ao passar sobre o ícone */
 }
 
-/***********Main***********/
+/* Main */
 .conteudo-principal {
-    position: absolute;
-    padding-top: 10vh;
-    min-height: 100vh;
+    position: absolute; /* Posiciona o elemento relativo ao contêiner */
+    padding-top: 10vh; /* Adiciona espaço no topo para evitar sobreposição com o cabeçalho */
+    min-height: 100vh; /* Define uma altura mínima igual à altura da viewport */
 }
 
-/***********Seção principal***********/
+/* Seção principal */
 #secao-principal {
-    padding: 1vh 1vw;
-    background: #575656 url(../img/fundoBrancoPreto.jpg) center/cover;
-    background-attachment: fixed;
+    padding: 1vh 1vw; /* Adiciona espaçamento interno vertical e horizontal */
+    background: #575656 url(../img/fundoBrancoPreto.jpg) center/cover; /* Define a cor e imagem de fundo */
+    background-attachment: fixed; /* Mantém o fundo fixo durante a rolagem */
 }
 
+/* Configurações para o contêiner de fundo na seção principal */
 .resumo-backgroud {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.8);
-    max-width: 70vw;
-    min-height: 88vh;
-    max-height: 90vh;
+    display: flex; /* Define um layout flexbox */
+    background-color: rgba(0, 0, 0, 0.8); /* Define um fundo semitransparente */
+    max-width: 70vw; /* Define a largura máxima */
+    min-height: 88vh; /* Define a altura mínima */
+    max-height: 90vh; /* Define a altura máxima */
 }
 
+/* Configurações para o conteúdo textual na seção principal */
 .resumo-conteudo {
-    font-size: 3vh;
-    color: #E3E0D9;
-    align-content: center;
-    margin: 0vh 10vw;
+    font-size: 3vh; /* Define o tamanho da fonte em relação à altura da viewport */
+    color: #E3E0D9; /* Define a cor do texto */
+    align-content: center; /* Centraliza o conteúdo */
+    margin: 0vh 10vw; /* Adiciona margem horizontal */
 }
 
+/* Estilos para os títulos na seção principal */
 .conteudo-titulo h1, .conteudo-titulo h3 {
-    margin-bottom: 5vh;
+    margin-bottom: 5vh; /* Adiciona margem inferior */
 }
 
+/* Estilos para o contêiner de botões de serviços */
 .div-button-sevices {
-    display: flex;
-    min-height: 10vh;
-    justify-content: start;
-    align-items: center;
+    display: flex; /* Define um layout flexbox */
+    min-height: 10vh; /* Define a altura mínima */
+    justify-content: start; /* Alinha os itens à esquerda */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
+/* Estilos para os botões de serviços */
 .button-sevices {
-    padding: 1vh 0vw;
-    border-radius: 20px;
-    background-color: #1DC6B5;
-    color: #E3E0D9;
-    font-weight: bold;
-    font-size: 18px;
-    width: 200px;
-    border: none;
-    cursor: pointer;
+    padding: 1vh 0vw; /* Adiciona espaçamento interno vertical */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    background-color: #1DC6B5; /* Define a cor de fundo */
+    color: #E3E0D9; /* Define a cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 18px; /* Define o tamanho da fonte */
+    width: 200px; /* Define a largura fixa */
+    border: none; /* Remove as bordas */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
 }
 
+/* Estilos ao passar o mouse sobre os botões de serviços */
 .button-sevices:hover {
-    border-right: 3px solid #fbfbfb;
-    border-bottom: 5px solid #ffffff;
+    border-right: 3px solid #fbfbfb; /* Adiciona uma borda lateral direita */
+    border-bottom: 5px solid #ffffff; /* Adiciona uma borda inferior */
 }
 
-/***********Seção sobre***********/
+/* Seção sobre */
 #sobre {
-    background-color: #3B165D;
-    min-height: 90vh;
-    display: flex;
-    justify-content: space-between;
+    background-color: #3B165D; /* Cor de fundo da seção */
+    min-height: 90vh; /* Altura mínima de 90% da altura da viewport */
+    display: flex; /* Define um layout flexbox */
+    justify-content: space-between; /* Espaça os itens igualmente ao longo do eixo principal */
 }
 
+/* Configuração da imagem de perfil na seção "sobre" */
 .sobre-img {
-    flex: 1;
-    background: #3B165D url(../img/fotoperfil.jpeg) no-repeat center/cover;
+    flex: 1; /* Ocupa 1 fração do espaço disponível */
+    background: #3B165D url(../img/fotoperfil.jpeg) no-repeat center/cover; /* Define uma imagem de fundo com ajuste de tamanho e posição */
 }
 
+/* Configuração do conteúdo textual da seção "sobre" */
 .sobre-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    flex: 1;
-    color: #E3E0D9;
+    display: flex; /* Define um layout flexbox */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    align-content: center; /* Centraliza o conteúdo */
+    flex: 1; /* Ocupa 1 fração do espaço disponível */
+    color: #E3E0D9; /* Define a cor do texto */
 }
 
+/* Configuração para o bloco de texto dentro da seção "sobre" */
 .texto-sobre {
-    margin: 30% 15%;
-    max-width: 50%;
+    margin: 30% 15%; /* Define margens para posicionar o texto */
+    max-width: 50%; /* Define a largura máxima como 50% do contêiner pai */
 }
 
+/* Estilo para o título principal dentro da seção "sobre" */
 .texto-sobre h1 {
-    margin-bottom: 4%;
-    font-size: 200%;
-    color: #1DC6B5;
+    margin-bottom: 4%; /* Adiciona espaçamento inferior */
+    font-size: 200%; /* Define o tamanho da fonte como 200% do padrão */
+    color: #1DC6B5; /* Define a cor do texto */
 }
 
+/* Estilo para os parágrafos dentro da seção "sobre" */
 .texto-sobre p {
-    line-height: 1.5;
+    line-height: 1.5; /* Define o espaçamento entre as linhas */
 }
 
-/*******************/
+/* Configuração para o contêiner geral das seções */
 .section-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
+    display: flex; /* Define um layout flexbox */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    justify-content: center; /* Centraliza os itens no eixo principal */
+    align-items: center; /* Centraliza os itens no eixo cruzado */
+    text-align: center; /* Alinha o texto no centro */
+    width: 100%; /* Define a largura como 100% do contêiner pai */
 }
 
+/* Configuração dos títulos para as seções "habilidades" e "hobbies" */
 #habilidades h1, #hobbies h1 {
-    color: #E3E0D9;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
+    color: #E3E0D9; /* Define a cor do texto */
+    font-size: 2.5rem; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    text-align: center; /* Alinha o texto no centro */
 }
 
-
-/***********Seção habilidades***********/
+/* Seção habilidades */
 #habilidades {
-    background: #1DC6B5;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
+    background: #1DC6B5; /* Define a cor de fundo */
+    min-height: 90vh; /* Altura mínima de 90% da altura da viewport */
+    display: flex; /* Define um layout flexbox */
+    justify-content: center; /* Centraliza os itens no eixo principal */
 }
 
+/* Configuração do contêiner para os cartões de habilidades */
 .div-posters-habilidades {
-    padding: 3%;
-    margin: 0 auto;
-    min-width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    padding: 3%; /* Adiciona espaçamento interno */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    min-width: 70%; /* Define a largura mínima como 70% do contêiner pai */
+    display: flex; /* Define um layout flexbox */
+    flex-wrap: wrap; /* Permite que os itens sejam organizados em múltiplas linhas */
+    justify-content: center; /* Centraliza os itens no eixo principal */
+    align-content: center; /* Centraliza as linhas no eixo cruzado */
+    align-items: center; /* Centraliza os itens no eixo cruzado */
 }
 
+/* Configuração para a lista que contém os cartões */
 .div-posters-habilidades ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    display: flex; /* Define um layout flexbox */
+    justify-content: center; /* Centraliza os itens no eixo principal */
+    flex-wrap: wrap; /* Permite que os itens sejam organizados em múltiplas linhas */
+    gap: 2em; /* Adiciona espaçamento entre os itens */
 }
 
+/* Configuração para cada item da lista */
 .div-posters-habilidades ul li {
-    padding: 10px;
-    display: inline-block;
-    justify-content: center;
+    padding: 10px; /* Adiciona espaçamento interno */
+    display: inline-block; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens no eixo cruzado */
 }
 
+/* Configuração para os cartões individuais de habilidades */
 .posters-habilidades {
-    display: block;
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    color: black;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
+    display: block; /* Exibe o elemento como bloco */
+    width: 300px; /* Define a largura fixa */
+    height: 500px; /* Define a altura fixa */
+    background-color: white; /* Define a cor de fundo */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao cartão */
+    color: black; /* Define a cor do texto */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Oculta o conteúdo que excede os limites */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar o elemento */
+    text-align: center; /* Alinha o texto no centro */
 }
 
+/* Configuração para as imagens dentro dos cartões */
 .posters-habilidades img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
+    width: 100%; /* Define a largura como 100% do cartão */
+    height: 200px; /* Define uma altura fixa */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço disponível */
+    display: block; /* Exibe a imagem como bloco */
 }
 
+/* Configuração para os textos dentro dos cartões */
 .posters-habilidades h3, .posters-habilidades p {
-    margin: 15px;
+    margin: 15px; /* Adiciona margem ao redor dos elementos */
 }
 
+/* Estilo para os títulos dentro dos cartões */
 .posters-habilidades h3 {
-    font-size: 1.2em;
-    color: #3B165D;
+    font-size: 1.2em; /* Define o tamanho da fonte */
+    color: #3B165D; /* Define a cor do texto */
 }
 
+/* Estilo para os parágrafos dentro dos cartões */
 .posters-habilidades p {
-    font-size: 1em;
-    line-height: 1.4;
-    color: #333333;
+    font-size: 1em; /* Define o tamanho da fonte */
+    line-height: 1.4; /* Define o espaçamento entre linhas */
+    color: #333333; /* Define a cor do texto */
 }
 
+/* Efeito ao passar o mouse sobre outros cartões enquanto foca em um */
 .focus:hover .posters-habilidades {
-    filter: blur(3px);
-    opacity: 0.5;
+    filter: blur(3px); /* Adiciona um desfoque */
+    opacity: 0.5; /* Reduz a opacidade */
 }
 
-.focus .posters-habilidades:hover{
-    filter: blur(0px);
-    opacity: 1;
+/* Remove o efeito de desfoque quando o cartão específico está focado */
+.focus .posters-habilidades:hover {
+    filter: blur(0px); /* Remove o desfoque */
+    opacity: 1; /* Restaura a opacidade */
 }
 
+/* Efeito de ampliação ao passar o mouse sobre os cartões */
 .posters-habilidades:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Amplia o cartão ligeiramente */
 }
 
-/***********Seção hobbies***********/
+/* Seção hobbies */
 #hobbies {
-    background-color: #3B165D;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
+    background-color: #3B165D; /* Define a cor de fundo da seção */
+    min-height: 90vh; /* Define a altura mínima como 90% da altura da viewport */
+    display: flex; /* Usa flexbox para organizar o layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
-#hobbies p{
+
+/* Define estilos adicionais para parágrafos dentro da seção de hobbies (vazio por enquanto) */
+#hobbies p {
 
 }
 
+/* Estiliza o contêiner que envolve os elementos de hobbies */
 .div-posters-hobbies {
-    padding: 3%;
-    margin: 0 auto;
-    min-width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    padding: 3%; /* Adiciona espaçamento interno */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    min-width: 70%; /* Define a largura mínima como 70% do contêiner pai */
+    display: flex; /* Usa flexbox para organizar o layout */
+    flex-wrap: wrap; /* Permite que os itens sejam organizados em múltiplas linhas */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-content: center; /* Centraliza as linhas dentro do contêiner */
+    align-items: center; /* Centraliza os itens verticalmente */
 }
 
+/* Estiliza as listas dentro do contêiner de hobbies */
 .div-posters-hobbies ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens sejam organizados em múltiplas linhas */
+    gap: 2em; /* Define um espaçamento entre os itens */
 }
 
+/* Estiliza os itens individuais dentro da lista */
 .div-posters-hobbies ul li {
-    padding: 10px;
-    display: inline-block;
-    justify-content: center;
+    padding: 10px; /* Adiciona espaçamento interno */
+    display: inline-block; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
+/* Estilo para os cartões de hobbies */
 .posters-hobbies {
-    display: block;
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    color: black;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
+    display: block; /* Exibe o elemento como bloco */
+    width: 300px; /* Define a largura fixa do cartão */
+    height: 500px; /* Define a altura fixa do cartão */
+    background-color: white; /* Define a cor de fundo */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao cartão */
+    color: black; /* Define a cor do texto */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Oculta o conteúdo que exceder os limites do cartão */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar o elemento */
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
 
+/* Estilo para as imagens dentro dos cartões de hobbies */
 .posters-hobbies img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
+    width: 100%; /* Define a largura da imagem como 100% do contêiner */
+    height: 200px; /* Define uma altura fixa para a imagem */
+    object-fit: cover; /* Garante que a imagem seja ajustada proporcionalmente */
+    display: block; /* Exibe a imagem como bloco */
 }
 
+/* Estilo para os títulos e parágrafos dentro dos cartões */
 .posters-hobbies h3, .posters-hobbies p {
-    margin: 15px;
+    margin: 15px; /* Adiciona margem em torno dos elementos */
 }
 
+/* Estilo para os títulos dentro dos cartões */
 .posters-hobbies h3 {
-    font-size: 1.2em;
-    color: #3B165D;
+    font-size: 1.2em; /* Define o tamanho da fonte */
+    color: #3B165D; /* Define a cor do texto */
 }
 
+/* Estilo para os parágrafos dentro dos cartões */
 .posters-hobbies p {
-    font-size: 1em;
-    line-height: 1.4;
-    color: #333333;
+    font-size: 1em; /* Define o tamanho da fonte */
+    line-height: 1.4; /* Define o espaçamento entre linhas */
+    color: #333333; /* Define a cor do texto */
 }
 
+/* Efeito de foco para os cartões de hobbies */
 .focus:hover .posters-hobbies {
-    filter: blur(3px);
-    opacity: 0.5;
+    filter: blur(3px); /* Adiciona um desfoque ao cartão */
+    opacity: 0.5; /* Reduz a opacidade */
 }
 
-.focus .posters-hobbies:hover{
-    filter: blur(0px);
-    opacity: 1;
+/* Remove o desfoque e restaura a opacidade quando o cartão específico está focado */
+.focus .posters-hobbies:hover {
+    filter: blur(0px); /* Remove o desfoque */
+    opacity: 1; /* Restaura a opacidade */
 }
 
+/* Efeito de hover nos cartões de hobbies */
 .posters-hobbies:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Amplia o cartão ligeiramente */
 }
 
-
-/***********Contato***********/
+/* Contato */
 #contato {
-    background: #1DC6B5;
-    min-height: 90vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
+    background: #1DC6B5; /* Cor de fundo */
+    min-height: 90vh; /* Altura mínima da seção */
+    display: flex; /* Usa flexbox para organizar o layout */
+    justify-content: space-between; /* Espaça os elementos igualmente */
+    align-items: center; /* Alinha os elementos verticalmente */
+    padding: 50px; /* Adiciona espaçamento interno */
 }
 
+/* Ajusta o contêiner que envolve o formulário */
 .form-ajust {
-    flex: 1;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1; /* Ocupa 1 fração do espaço disponível */
+    min-height: 90vh; /* Altura mínima da seção */
+    display: flex; /* Usa flexbox para organizar o layout */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
 }
 
+/* Configurações para o formulário de contato */
 .form-wrapper {
-    background-color: #12061D;
-    padding: 3%;
-    border-radius: 20px;
-    width: 50%;
-    height: auto;
-    color: #E3E0D9;
-    display: flex;
-    flex-direction: column;
+    background-color: #12061D; /* Cor de fundo do formulário */
+    padding: 3%; /* Adiciona espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    width: 50%; /* Largura fixa */
+    height: auto; /* Altura automática */
+    color: #E3E0D9; /* Cor do texto */
+    display: flex; /* Usa flexbox para organizar o layout */
+    flex-direction: column; /* Alinha os itens em uma coluna */
 }
 
+/* Estilo para o título do formulário */
 .form-wrapper h2 {
-    color: #E3E0D9;
-    margin-bottom: 20px;
+    color: #E3E0D9; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
 }
 
+/* Configuração para os grupos de entrada do formulário */
 .form-group {
-    justify-content: center;
-    margin-bottom: 1%;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 1%; /* Espaçamento inferior */
 }
 
+/* Estilo para rótulos no formulário */
 label {
-    display: block;
-    margin-bottom: 5px;
-    color: #E3E0D9;
+    display: block; /* Exibe os rótulos como blocos */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    color: #E3E0D9; /* Cor do texto */
 }
 
+/* Configurações para entradas e área de texto no formulário */
 input[type="text"], input[type="email"], input[type="tel"], textarea {
-    width: 100%;
-    padding: 1%;
-    border-radius: 10px;
-    border: 1px solid #E3E0D9;
-    background-color: #1E1B29;
-    color: #E3E0D9;
+    width: 100%; /* Largura total */
+    padding: 1%; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 1px solid #E3E0D9; /* Borda com cor definida */
+    background-color: #1E1B29; /* Cor de fundo */
+    color: #E3E0D9; /* Cor do texto */
 }
 
+/* Estilo específico para o campo de texto longo */
 textarea {
-    height: 100px;
+    height: 100px; /* Define uma altura fixa */
 }
 
+
+/* Estilo para o botão de envio no formulário */
 button[type="submit"] {
-    background-color: #1DC6B5;
-    color: #12061D;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    width: 40%;
-    font-size: 16px;
+    background-color: #1DC6B5; /* Cor de fundo do botão */
+    color: #12061D; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 30px; /* Bordas arredondadas */
+    cursor: pointer; /* Define o cursor como "mãozinha" ao passar o mouse */
+    width: 40%; /* Largura relativa do botão */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
+/* Efeito de hover para o botão de envio */
 button[type="submit"]:hover {
-    background-color: #17a294;
+    background-color: #17a294; /* Nova cor de fundo ao passar o mouse */
 }
 
+/* Estilo para a seção de informações de contato */
 .contact-info {
-    margin-top: 5%;
-    text-align: center;
-    flex: 1;
-    cursor: default;
-    color: #E3E0D9;
+    margin-top: 5%; /* Margem superior */
+    text-align: center; /* Centraliza o texto */
+    flex: 1; /* Ajusta a largura da seção dentro de um flex container */
+    cursor: default; /* Desabilita o clique no texto */
+    color: #E3E0D9; /* Cor do texto */
 }
 
+/* Estilo para o menu de contatos */
 .menu-contato {
-    display: inline-block;
-    margin: 0;
-    align-content: center;
-    height: auto;
-    min-width: auto;
-    align-items: center;
-    background: none;
-
+    display: inline-block; /* Alinha os itens em bloco */
+    margin: 0; /* Remove margens */
+    align-content: center; /* Centraliza o conteúdo */
+    height: auto; /* Altura automática */
+    min-width: auto; /* Largura mínima automática */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background: none; /* Remove o fundo */
 }
 
+/* Estilo para cada item da lista de contatos */
 .menu-contato ul li {
-    display: inline-block;
+    display: inline-block; /* Alinha os itens em linha */
 }
 
+/* Estilo para ícones das redes sociais */
 .button-redes i {
-    font-size: 18px;
+    font-size: 18px; /* Define o tamanho dos ícones */
 }
 
+/* Estilo para os botões de redes sociais */
 .button-redes {
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: center;
-    height: 30px;
-    font-size: 20px;
-    color: #E3E0D9;
-    background: none;
+    border: none; /* Remove a borda */
+    background: none; /* Remove o fundo */
+    width: 100%; /* Largura total */
+    text-align: center; /* Centraliza o texto */
+    height: 30px; /* Altura do botão */
+    font-size: 20px; /* Tamanho da fonte */
+    color: #E3E0D9; /* Cor do texto */
+
 }
 
+/* Estilo para links na seção de contato */
 .contact-info p a {
-    text-decoration: none;
-    color: #E3E0D9;
+    text-decoration: none; /* Remove o sublinhado */
+    color: #E3E0D9; /* Define a cor do texto */
 }
 
-
-.menu-contato :hover, .contact-info p :hover, .contact-info p a :hover, .contact-info ul li:hover {
-    color: #3B165D;
+.menu-contato :hover,
+.contact-info p :hover,
+.contact-info p a :hover,
+.contact-info ul li:hover {
+    color: #3B165D; /* Nova cor ao passar o mouse */
 }
 
-
-.contact-info p, .contact-info h3, .contact-info ul {
-    color: #E3E0D9;
-    margin-bottom: 10px;
-}
-
+/* Estilo geral para textos e listas na seção de contato */
+.contact-info p,
+.contact-info h3,
 .contact-info ul {
-    list-style: none;
+    color: #E3E0D9; /* Define a cor do texto */
+    margin-bottom: 10px; /* Espaçamento inferior */
 }
 
+/* Estilo para listas na seção de contato */
+.contact-info ul {
+    list-style: none; /* Remove os marcadores das listas */
+}
+
+/* Espaçamento inferior para itens da lista */
 .contact-info ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Margem inferior */
 }
 
+/* Estilo para ícones na seção de contato */
 .contact-info i {
-    margin-right: 10px;
+    margin-right: 10px; /* Margem à direita */
 }
 
-/***********Footer***********/
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    left: 0;
-    height: 5vh;
-    background-color: #3B165D;
-    color: #E3E0D9;
+/* Footer */
+footer {
+    display: flex; /* Aplica layout flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    bottom: 0; /* Fixa o rodapé na parte inferior */
+    left: 0; /* Alinha o rodapé à esquerda */
+    height: 5vh; /* Define a altura relativa */
+    background-color: #3B165D; /* Cor de fundo */
+    color: #E3E0D9; /* Cor do texto */
 }
 
-/* Media Queries */
+/* Estilos responsivos para telas menores que 768px */
 @media (max-width: 768px) {
+    /* Configura o menu de navegação para dispositivos móveis */
     .menu-nav {
-        display: none;
-        flex-direction: column;
-        background-color: #3B165D;
-        position: absolute;
-        top: 10vh;
-        left: 0;
-        width: 100%;
+        display: none; /* Esconde o menu padrão */
+        flex-direction: column; /* Alinha itens verticalmente */
+        background-color: #3B165D; /* Cor de fundo */
+        position: absolute; /* Define posição absoluta */
+        top: 10vh; /* Define a distância do topo */
+        left: 0; /* Alinha o menu à esquerda */
+        width: 100%; /* Largura total */
     }
 
+    /* Mostra o ícone de menu "hambúrguer" */
     .menu-icon {
-        display: block;
+        display: block; /* Exibe o ícone */
     }
 
+    /* Mostra o menu quando o checkbox está ativado */
     #menu-toggle:checked + .menu-icon + .menu-nav {
-        display: flex;
+        display: flex; /* Exibe o menu */
     }
 
+    /* Centraliza os itens no menu de dispositivos móveis */
     .menu-nav ul {
-        text-align: center;
-        width: 100%;
-        padding: 0;
+        text-align: center; /* Centraliza o texto */
+        width: 100%; /* Largura total */
+        padding: 0; /* Remove o preenchimento */
     }
 
+    /* Estilo para itens de menu em dispositivos móveis */
     .menu-nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Alinha os itens verticalmente */
+        margin: 10px 0; /* Espaçamento entre itens */
     }
 
-    .perfil {
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-
+    /* Ajustes para a seção de contato em dispositivos móveis */
     #contato {
-        flex-direction: column;
-        padding: 20px;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        padding: 20px; /* Espaçamento interno */
     }
 
+    /* Ajusta a largura do formulário em telas menores */
     .form-wrapper {
-        width: 90%;
-        margin-bottom: 20px;
+        width: 90%; /* Reduz a largura do formulário */
+        margin-bottom: 20px; /* Espaçamento inferior */
     }
 
+    /* Ajusta o alinhamento das informações de contato */
     .contact-info {
-        padding-left: 0;
-        margin-top: 20px;
+        padding-left: 0; /* Remove o preenchimento à esquerda */
+        margin-top: 20px; /* Adiciona margem superior */
     }
 
+    /* Ajusta o menu de contato para telas menores */
     .menu-contato {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
+        flex-direction: row; /* Alinha os itens horizontalmente */
+        justify-content: center; /* Centraliza os itens */
+        gap: 10px; /* Espaçamento entre itens */
     }
 
+    /* Ajustes para a seção principal em dispositivos móveis */
     #secao-principal, #sobre {
-        flex-direction: column;
-        align-items: center;
-        padding: 2vh 1vw;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+        padding: 2vh 1vw; /* Espaçamento interno */
     }
 
+    /* Ajusta a largura e o espaçamento da seção principal */
     .resumo-backgroud {
-        max-width: 90vw;
-        min-height: auto;
-        padding: 20px;
+        max-width: 90vw; /* Reduz a largura máxima */
+        min-height: auto; /* Altura automática */
+        padding: 20px; /* Espaçamento interno */
     }
 
+    /* Ajusta o texto na seção principal */
     .resumo-conteudo {
-        margin: 0;
-        font-size: 2vh;
-        text-align: center;
+        margin: 0; /* Remove margens */
+        font-size: 2vh; /* Reduz o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
     }
 
+    /* Ajustes para a imagem na seção "sobre" */
     .sobre-img {
-        min-height: 30vh;
-        width: 100%;
+        min-height: 30vh; /* Define altura mínima */
+        width: 100%; /* Largura total */
     }
 
+    /* Ajustes para o texto na seção "sobre" */
     .texto-sobre {
-        max-width: 90%;
-        margin-top: 20px;
+        max-width: 90%; /* Reduz a largura máxima */
+        margin-top: 20px; /* Adiciona margem superior */
     }
 }

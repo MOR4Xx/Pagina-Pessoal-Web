@@ -1,241 +1,286 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR"> <!-- Define o idioma da página como Português do Brasil -->
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Página Pessoal</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <!-- Metadados -->
+    <meta charset="utf-8"> <!-- Define o charset como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Responsividade para diferentes dispositivos -->
+    <title>Página Pessoal</title> <!-- Título exibido na aba do navegador -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Importa o arquivo de estilos CSS -->
+    <meta name="description" content=""> <!-- Meta descrição para SEO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa"> <!-- Define a cor do tema para dispositivos móveis -->
 </head>
 
 <body>
+<!-- Cabeçalho com menu de navegação -->
 <header class="menubar">
-  <div class="perfil">
-    <figure><img src="img/logo.png" alt="Logo"></figure>
-  </div>
+    <div class="perfil">
+        <figure><img src="img/logo.png" alt="Logo"></figure> <!-- Logotipo do site -->
+    </div>
 
-  <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" class="menu-icon">
-    <i class="fas fa-bars"></i>
-  </label>
+    <!-- Menu Hamburguer para dispositivos móveis -->
+    <input type="checkbox" id="menu-toggle"/> <!-- Input para ativar/desativar o menu -->
+    <label for="menu-toggle" class="menu-icon"> <!-- Ícone para menu responsivo -->
+        <i class="fas fa-bars"></i> <!-- Ícone de hambúrguer para menu -->
+    </label>
 
-  <nav class="menu-nav">
-    <ul>
-      <li><a class="a-menu" href="#secao-principal">
-        <button class="button-menu">Inicio</button>
-      </a></li>
-      <li><a class="a-menu" href="#sobre">
-        <button class="button-menu">Sobre</button>
-      </a></li>
-      <li><a class="a-menu" href="#habilidades">
-        <button class="button-menu">Habilidades</button>
-      </a></li>
-      <li><a class="a-menu" href="#contato">
-        <button class="button-menu">Contato</button>
-      </a></li>
-    </ul>
-  </nav>
+    <!-- Navegação principal -->
+    <nav class="menu-nav">
+        <ul>
+            <!-- Links para as seções da página -->
+            <li><a class="a-menu" href="#secao-principal">
+                <button class="button-menu">Inicio</button>
+            </a></li>
+            <li><a class="a-menu" href="#sobre">
+                <button class="button-menu">Sobre</button>
+            </a></li>
+            <li><a class="a-menu" href="#habilidades">
+                <button class="button-menu">Habilidades</button>
+            </a></li>
+            <li><a class="a-menu" href="#contato">
+                <button class="button-menu">Contato</button>
+            </a></li>
+        </ul>
+    </nav>
 </header>
 
+<!-- Conteúdo principal -->
 <main class="conteudo-principal">
 
-  <section id="secao-principal">
-    <div class="resumo-backgroud">
-      <div class="resumo-conteudo">
-        <div class="conteudo-titulo">
-          <h1>Jorge Afonso </h1>
-          <h3>Explorando o mundo da programação e de automação IoT e entusiasta do mundo dos games</h3>
+    <!-- Seção principal de introdução -->
+    <section id="secao-principal">
+        <div class="resumo-backgroud"> <!-- Fundo de resumo -->
+            <div class="resumo-conteudo"> <!-- Conteúdo principal -->
+                <div class="conteudo-titulo"> <!-- Títulos da seção -->
+                    <h1>Jorge Afonso</h1> <!-- Nome do autor -->
+                    <h3>Explorando o mundo da programação e de automação IoT e entusiasta do mundo dos games</h3> <!-- Resumo pessoal -->
+                </div>
+                <div class="div-button-sevices"> <!-- Botão de acesso ao portfólio -->
+                    <a href="https://mor4xx.github.io/Portifolio/"> <!-- Link para o portfólio -->
+                        <button class="button-sevices">Portifolio</button> <!-- Botão do portfólio -->
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="div-button-sevices"><a href="#habilidades">
-          <a href="https://mor4xx.github.io/Portifolio/"><button class="button-sevices">Portifolio</button><a/>
-        </a></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="sobre">
-    <figure class="sobre-img"></figure>
-    <div class="sobre-conteudo">
-      <div class="texto-sobre">
-        <h1>Conheça um pouco sobre mim</h1>
-        <p>
-          Sou Jorge Afonso, um jovem entusiasta de 19 anos, em busca de oportunidades para aplicar e expandir meus conhecimentos na área de Tecnologia da Informação. 
-          Estou no quarto período de Sistemas de Informação e possuo formação técnica em Redes de Computadores pelo Instituto Federal Goiano. Trago comigo uma paixão 
-          pelo mundo das tecnologias e procurando aprendizado contínuo. Comprometo-me a contribuir de forma significativa em ambientes dinâmicos e colaborativos, 
-          ansioso para enfrentar desafios, adquirir novas habilidades e crescer profissionalmente enquanto faço parte de uma equipe inovadora e inspiradora.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="habilidades">
-    <div class="section-wrapper">
-      <h1>Especializações</h1>
-      <div class="div-posters-habilidades">
-        <ul class="focus">
-          <li class="posters-habilidades">
-            <img src="img/redes.png" alt="Poster 1">
-            <div>
-              <h3>Tecnico em Redes de Computadores</h3>
-              <p>Formação no ensino médio integrado ao curso técnico, experiencias praticas de configuração, montagem e gerenciamento de Redes Físicas</p>
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <figure class="sobre-img"></figure> <!-- Imagem decorativa -->
+        <div class="sobre-conteudo"> <!-- Conteúdo textual -->
+            <div class="texto-sobre"> <!-- Texto de apresentação -->
+                <h1>Conheça um pouco sobre mim</h1> <!-- Título da seção -->
+                <p>
+                    Sou Jorge Afonso, um jovem entusiasta de 19 anos, em busca de oportunidades para aplicar e expandir
+                    meus conhecimentos na área de Tecnologia da Informação.
+                    Estou no quarto período de Sistemas de Informação e possuo formação técnica em Redes de Computadores
+                    pelo Instituto Federal Goiano.
+                    Trago comigo uma paixão pelo mundo das tecnologias e procuro aprendizado contínuo.
+                    Comprometo-me a contribuir de forma significativa em ambientes dinâmicos e colaborativos.
+                </p>
             </div>
-          </li>
+        </div>
+    </section>
 
-          <li class="posters-habilidades">
-            <img src="img/java.png" alt="Poster 2">
-            <div>
-              <h3>Java</h3>
-              <p>Programador Java avançado. Varios projetos em Java Oritentado a Obejtos, projetos usando SpringBoot e varias outras tecnologias.</p>
+    <!-- Seção de Habilidades -->
+    <section id="habilidades">
+        <div class="section-wrapper"> <!-- Wrapper para organizar a seção -->
+            <h1>Especializações</h1> <!-- Título da seção -->
+            <div class="div-posters-habilidades"> <!-- Contêiner de habilidades -->
+                <ul class="focus"> <!-- Lista de habilidades -->
+                    <!-- Habilidade 1 -->
+                    <li class="posters-habilidades">
+                        <img src="img/redes.png" alt="Poster 1"> <!-- Imagem representativa -->
+                        <div>
+                            <h3>Técnico em Redes de Computadores</h3> <!-- Título da habilidade -->
+                            <p>Experiências práticas de configuração, montagem e gerenciamento de redes físicas.</p> <!-- Descrição -->
+                        </div>
+                    </li>
+
+                    <!-- Habilidade 2 -->
+                    <li class="posters-habilidades">
+                        <img src="img/java.png" alt="Poster 2"> <!-- Imagem representativa -->
+                        <div>
+                            <h3>Java</h3> <!-- Título da habilidade -->
+                            <p>Experiência em programação orientada a objetos e projetos com SpringBoot.</p> <!-- Descrição -->
+                        </div>
+                    </li>
+
+                    <!-- Habilidade 3 -->
+                    <li class="posters-habilidades">
+                        <img src="img/python.png" alt="Poster 2"> <!-- Imagem representativa -->
+                        <div>
+                            <h3>Python</h3> <!-- Título da habilidade -->
+                            <p>Experiência em automação com Raspberry Pi e sensores de baixo custo.</p> <!-- Descrição -->
+                        </div>
+                    </li>
+
+                    <!-- Habilidade 4 -->
+                    <li class="posters-habilidades">
+                        <img src="img/raspberry%20.png" alt="Poster 2"> <!-- Imagem representativa -->
+                        <div>
+                            <h3>Automação IoT</h3> <!-- Título da habilidade -->
+                            <p>Projetos de controle de ambientes de cultivo com Raspberry Pi.</p> <!-- Descrição -->
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
+        </div>
+    </section>
 
-          <li class="posters-habilidades">
-            <img src="img/python.png" alt="Poster 2">
-            <div>
-              <h3>Python</h3>
-              <p>Experiencia em programação em Python Intermediaria, usando em automação de ambientes usando Raspberry Pi e sensores de baixo custo.</p>
+    <!-- Seção de Hobbies -->
+    <section id="hobbies">
+        <!-- Wrapper da seção com título e lista de hobbies -->
+        <div class="section-wrapper">
+            <h1>Hobbies</h1> <!-- Título da seção -->
+            <div class="div-posters-hobbies">
+                <!-- Lista de hobbies com destaque visual -->
+                <ul class="focus">
+                    <!-- Primeiro hobby: Games -->
+                    <li class="posters-hobbies">
+                        <img src="img/imagem games.jpg" alt="Poster 1"> <!-- Imagem representativa -->
+                        <div>
+                            <h3>Amante de Games</h3> <!-- Título do hobby -->
+                            <p>Jogar me transporta para mundos diferentes e me ajuda a relaxar e aprender estratégias.</p> <!-- Descrição -->
+                        </div>
+                    </li>
+
+                    <!-- Segundo hobby: Treinar -->
+                    <li class="posters-hobbies">
+                        <img src="img/imagem academia.jpg" alt="Poster 2"> <!-- Imagem representativa -->
+                        <div>
+                            <h3>Treinar</h3> <!-- Título do hobby -->
+                            <p>A academia é onde busco foco e energia, com pequenas vitórias diárias.</p> <!-- Descrição -->
+                        </div>
+                    </li>
+
+                    <!-- Terceiro hobby: Cozinhar -->
+                    <li class="posters-hobbies">
+                        <img src="img/imagem comida.jpg" alt="Poster 2"> <!-- Imagem representativa -->
+                        <div>
+                            <h3>Cozinhar</h3> <!-- Título do hobby -->
+                            <p>Criar pratos deliciosos me conecta com a cultura e a criatividade.</p> <!-- Descrição -->
+                        </div>
+                    </li>
+
+                    <!-- Quarto hobby: Animes -->
+                    <li class="posters-hobbies">
+                        <img src="img/imagem anime.jpg" alt="Poster 2"> <!-- Imagem representativa -->
+                        <div>
+                            <h3>Animes</h3> <!-- Título do hobby -->
+                            <p>Histórias cativantes e personagens inspiradores são minha fonte de aprendizado.</p> <!-- Descrição -->
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
+        </div>
+    </section>
 
-          <li class="posters-habilidades">
-            <img src="img/raspberry%20.png" alt="Poster 2">
-            <div>
-              <h3>Automação de Ambientes IoT usando Raspberry Pi</h3>
-              <p>Experiencia em automação IoT, com projeto de pesquisa em andamento na área. Desenvolvendo Porjeto de Controle de Ambiente de cultivo.</p>
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <!-- Div para ajustar o layout do formulário -->
+        <div class="form-ajust">
+            <div class="form-wrapper">
+                <h2>Deixe suas informações para contato</h2> <!-- Título da seção -->
+                <!-- Formulário de contato -->
+                <form action="" method="post">
+                    <!-- Campo para o nome -->
+                    <div class="form-group">
+                        <label for="nome">Nome *</label> <!-- Rótulo do campo -->
+                        <input type="text" id="nome" name="nome" required> <!-- Campo de texto -->
+                    </div>
+
+                    <!-- Campo para o email -->
+                    <div class="form-group">
+                        <label for="email">Email *</label> <!-- Rótulo do campo -->
+                        <input type="email" id="email" name="email" required> <!-- Campo de email -->
+                    </div>
+
+                    <!-- Campo para o telefone -->
+                    <div class="form-group">
+                        <label for="telefone">Telefone de contato *</label> <!-- Rótulo do campo -->
+                        <input type="tel" id="telefone" name="telefone" required> <!-- Campo de telefone -->
+                    </div>
+
+                    <!-- Campo para o recado -->
+                    <div class="form-group">
+                        <label for="recado">Recado</label> <!-- Rótulo do campo -->
+                        <textarea id="recado" name="recado"></textarea> <!-- Área de texto -->
+                    </div>
+
+                    <!-- Botão de envio do formulário -->
+                    <div id="button-submit" class="form-group">
+                        <button type="submit">ENVIAR</button> <!-- Botão -->
+                    </div>
+                </form>
             </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        </div>
 
-  <section id="hobbies">
-    <div class="section-wrapper">
-      <h1>Hobbies</h1>
-      <div class="div-posters-hobbies">
-        <ul class="focus">
-          <li class="posters-hobbies">
-            <img src="img/imagem games.jpg" alt="Poster 1">
+        <!-- Informações de contato -->
+        <div class="contact-info">
+            <!-- Navegação para redes sociais -->
+            <nav class="menu-contato">
+                <ul>
+                    <!-- Link para o GitHub -->
+                    <li>
+                        <a href="https://github.com/MOR4Xx" target="_blank">
+                            <button class="button-redes"><i class="fab fa-github"></i></button> <!-- Ícone do GitHub -->
+                        </a>
+                    </li>
+                    <!-- Link para o LinkedIn -->
+                    <li>
+                        <a href="https://www.linkedin.com/in/jorge-afonso-rabelo-de-araujo-598088239/" target="_blank">
+                            <button class="button-redes"><i class="fab fa-linkedin"></i></button> <!-- Ícone do LinkedIn -->
+                        </a>
+                    </li>
+                    <!-- Link para o Instagram -->
+                    <li>
+                        <a href="https://www.instagram.com/jorgearaujo_r/?hl=pt-br" target="_blank">
+                            <button class="button-redes"><i class="fab fa-instagram"></i></button> <!-- Ícone do Instagram -->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Informações adicionais de contato -->
             <div>
-              <h3>Amante de Games</h3>
-              <p>Jogar é uma paixão que me transporta para diferentes mundos e aventuras.
-                Gosto de explorar novas histórias, competir e, principalmente,
-                me divertir com amigos. É uma ótima maneira de desconectar e relaxar enquanto me desafio e aprendo estratégias.
-                Sempre há algo novo para descobrir!</p>
+                <!-- Link para enviar email -->
+                <p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jarabelo68@gmail.com&su=Contato%20Site%20Pessoal&body=Escreva%20sua%20mensagem%20aqui"
+                       target="_blank"> <!-- Link para abrir o Gmail com destinatário e assunto preenchidos -->
+                        <i class="fas fa-envelope"></i> jarabelo68@gmail.com <!-- Ícone de envelope e email do contato -->
+                    </a>
+                </p>
+                <!-- Localização -->
+                <p>
+                    <a href="https://maps.app.goo.gl/7MaLxFrLTTFzeP6J8" target="_blank"> <!-- Link para abrir a localização no Google Maps -->
+                        <i class="fas fa-map-marker-alt"></i> Ipameri, GO BR <!-- Ícone de localização e endereço -->
+                    </a>
+                </p>
+                <!-- Horários de atendimento -->
+                <h3>Horários</h3> <!-- Título para os horários -->
+                <ul>
+                    <li>Segunda: 9:00 – 18:00</li> <!-- Horário da segunda-feira -->
+                    <li>Terça: 9:00 – 18:00</li> <!-- Horário da terça-feira -->
+                    <li>Quarta: 9:00 – 18:00</li> <!-- Horário da quarta-feira -->
+                    <li>Quinta: 9:00 – 18:00</li> <!-- Horário da quinta-feira -->
+                    <li>Sexta: 9:00 – 18:00</li> <!-- Horário da sexta-feira -->
+                </ul>
             </div>
-          </li>
+        </div>
+    </section>
 
-          <li class="posters-hobbies">
-            <img src="img/imagem academia.jpg" alt="Poster 2">
-            <div>
-              <h3>Treinar</h3>
-              <p>Treinar é essencial para mim, não só pela saúde, mas pelo foco que isso me dá. A academia é
-                onde recarrego minhas energias e busco sempre evoluir. A cada treino, sinto a conquista de pequenas vitórias,
-                mantendo o corpo ativo e a mente leve. É um hábito que me faz bem em todos os sentidos.</p>
-            </div>
-          </li>
+    <!-- Rodapé -->
+    <footer id="footer">
+        <p>© Jorge Afonso 2024</p> <!-- Direitos autorais com o nome do autor e ano -->
+    </footer>
 
-          <li class="posters-hobbies">
-            <img src="img/imagem comida.jpg" alt="Poster 2">
-            <div>
-              <h3>Cozinhar</h3>
-              <p>Cozinhar é minha forma de criar e experimentar novos sabores. Adoro preparar pratos que agradam ao paladar e trazem conforto.
-                É um processo que me conecta com a cultura e a criatividade, transformando ingredientes simples em algo especial.
-                Cada refeição é uma nova oportunidade de experimentar e melhorar minhas habilidades na cozinha.</p>
-            </div>
-          </li>
-
-          <li class="posters-hobbies">
-            <img src="img/imagem anime.jpg" alt="Poster 2">
-            <div>
-              <h3>Animes</h3>
-              <p>Assistir animes é uma das minhas formas favoritas de relaxar.
-                Gosto das histórias profundas e dos personagens cativantes que me prendem a cada episódio.
-                É fascinante ver como esses mundos fictícios abordam temas como amizade, coragem e superação.
-                Os animes são muito mais do que entretenimento; são uma fonte de inspiração e aprendizado para mim.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <div class="form-ajust">
-      <div class="form-wrapper">
-        <h2>Deixe suas informações para contato</h2>
-        <form action="" method="post">
-          <div class="form-group">
-            <label for="nome">Nome *</label>
-            <input type="text" id="nome" name="nome" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="telefone">Telefone de contato *</label>
-            <input type="tel" id="telefone" name="telefone" required>
-          </div>
-
-          <div class="form-group">
-            <label for="recado">Recado</label>
-            <textarea id="recado" name="recado"></textarea>
-          </div>
-
-          <div id="button-submit" class="form-group">
-            <button type="submit">ENVIAR</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="contact-info">
-      <nav class="menu-contato">
-        <ul>
-          <li><a href="https://github.com/MOR4Xx" target="_blank">
-            <button class="button-redes" ><i class="fab fa-github"></i></button>
-          </a></li>
-          <li><a href="https://www.linkedin.com/in/jorge-afonso-rabelo-de-araujo-598088239/" target="_blank">
-            <button class="button-redes"><i class="fab fa-linkedin"></i></button>
-          </a></li>
-          <li><a href="https://www.instagram.com/jorgearaujo_r/?hl=pt-br" target="_blank">
-            <button class="button-redes"><i class="fab fa-instagram"></i></button>
-          </a></li>
-        </ul>
-      </nav>
-      <div>
-        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jarabelo68@gmail.com&su=Contato%20Site%20Pessoal&body=Escreva%20sua%20mensagem%20aqui" target="_blank"><i class="fas fa-envelope"></i> jarabelo68@gmail.com</a></p>
-        <p><a href="https://maps.app.goo.gl/7MaLxFrLTTFzeP6J8" target="_blank"><i class="fas fa-map-marker-alt"></i> Ipameri, GO BR</a></p>
-        <h3>Horários</h3>
-        <ul>
-          <li>Segunda: 9:00 – 18:00</li>
-          <li>Terça: 9:00 – 18:00</li>
-          <li>Quarta: 9:00 – 18:00</li>
-          <li>Quinta: 9:00 – 18:00</li>
-          <li>Sexta: 9:00 – 18:00</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <!-- Importa o script JavaScript -->
+    <script src="./js/app.js"></script> <!-- Link para o arquivo JavaScript -->
 </main>
-
-<footer id="footer">
-  <p>© Jorge Afonso 2024</p>
-</footer>
-
-<script src="./js/app.js"></script>
 </body>
-
 </html>
